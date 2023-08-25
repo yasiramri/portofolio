@@ -1,124 +1,124 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400;700&family=Quicksand:wght@500;700&display=swap');
 
-*, *::before, *::after{
-    box-sizing: border-box;
-}
-body {
-    height: 135vh;
-    font-family: 'Abril Fatface', 'Quicsand', sans-serif;
-    margin: 0;
+*, *::before, *::after {
+  box-sizing: border-box;
+ }
 
-    display: flex;
-    flex-direction: column;
-}
-
-.navbar-container {
- display: inline;
-}
-
-.nav-list {
-  position: sticky;
-  top: 0;
-}
-
-header.navbar-container {
-    max-width: 1200px;
-    width: 100%;
-    margin-inline: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-    padding-block: 1rem;
-    z-index: 999;
-   }
+ body {
+  height: 100vh;
+  font-family: 'Abril Fatface', sans-serif;
+  margin: 0;
   
-   header.navbar-container .logo img {
-    width: 150px;
-   }
+  display: flex;
+  flex-direction: column;
+ }
+ 
+ header.navbar-container {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  padding-block: 1rem;
+  z-index: 999;
+ }
+  
+ header.navbar-container .logo img {
+  width: 150px;
+ }
 
-   header.navbar-container .nav-list ul {
-    padding-left: 0;
-    display: flex;
-    justify-content: center;
-    gap: 2rem 1rem;
-  }
-   
-  header.navbar-container .nav-list li {
-    list-style-type: none;
-  }
-   
-  header.navbar-container .nav-list li a {
-    text-decoration: none;
-    font-size: 1.05rem;
-    font-weight: 500;
-    color: #0c00ff;
-    padding: .5rem 1.5rem;
-    border-radius: 999px;
-    transition: all .2s ease-in-out;
-  }
-   
-  header.navbar-container .nav-list li:hover a {
-    background-color: #060085;
-    color: white;
-  }
+ header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+ 
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
 
-  p {
-    font-family: Poppins;
-  }
+ header.navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #0c00ff;
+  padding: .5rem 1.5rem;
+  border-radius: 999px;
+  transition: all .2s ease-in-out;
+}
+ 
+header.navbar-container .nav-list li:hover a {
+  background-color: #060085;
+  color: white;
+}
 
-  main .content .content-image {
-    flex: 1;
-    display: flex;
-  }
+main .content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
 
-  main .content .content-image img {
-    margin: auto;
-    min-width: 150px;
-    width: 250px;
-  }
+main .content .content-description {
+  flex: 1 1;
+}
+ 
+main .content .content-description .title {
+  font-size: 3.5rem;
+  margin-block: .5rem;
+  color: #0c00ff;
+}
 
-  main .content {
-    flex: 1;
-    display: flex;
-    align-items: center;
+.title {
+  font-size: 3.5rem;
+  margin-block: .5rem;
+  color: #0c00ff;
+}
 
-  }
+p {
+  font-family: Poppins;
+}
 
-  main .content .content-description {
-    flex: 1 1;
+main .content .content-image {
+  flex: 1;
+  display: flex;
+}
 
-  }
-
-  main .content .content-description .title {
-    font-size: 3.5rem;
-    margin-block: .5rem;
-    color: #0c00ff;
-  }
-
-  main .content .content-description p {
+main .content .content-description p {
   line-height: 1.7rem;
   font-size: 1.2rem;
 }
 
-main {
-    max-width: 1200px;
-    width: 100%;
-    margin-inline: auto;
-    padding: 2rem 4rem;
-    flex: 1;
-
-    display: flex;
-    align-items: center;
-  }
-
-
-.title {
-    font-size: 3.5rem;
-    margin-block: .5rem;
-    color: #0c00ff;
+main .content .content-image img {
+  margin: auto;
+  min-width: 150px;
+  width: 250px;
 }
 
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  flex: 1;
+
+ 
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main article p {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+  font-family: Poppins;
+}
+
+main aside i {
+  display: flex;
+  justify-content: center;
+}
 
 footer {
   padding: 20px;
@@ -126,31 +126,6 @@ footer {
   color: white;
   font-weight: bold;
   text-align: center;
-}
-
-aside {
-  max-width: 1200px;
-  padding: 2rem 4rem;
-  width: 100%;
-  margin-inline: auto;
-  flex: 1;
-
-  display: flex;
-  
-}
-
-aside .aside-content .aside-description {
-  flex: 1 1;
-}
-
-aside .aside-content .aside-description .title2 {
-  font-size: 3.5rem;
-  margin-block: .5rem;
-  color: #0c00ff;
-}
-
-aside .aside-content .aside-description p {
-  color: #0c00ff;
 }
 
 @media screen and (max-width: 768px) {
